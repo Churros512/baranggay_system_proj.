@@ -1,0 +1,31 @@
+{
+    "name": "C++ GTK 4 Cloud Desktop",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    
+    // Automatically installs GTK 4 system dependencies on startup
+    "postCreateCommand": "sudo apt update && sudo apt install -y libgtk-4-dev build-essential pkg-config",
+
+    // Adds a lightweight virtual Linux desktop streamable to your Windows browser
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    },
+
+    // Forwards the virtual monitor streaming port to your machine
+    "forwardPorts": [6080],
+    "portsAttributes": {
+        "6080": {
+            "label": "GTK App Display Monitor",
+            "onAutoForward": "notify"
+        }
+    },
+
+    // Automatically installs the necessary C++ extensions in your workspace
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack"
+            ]
+        }
+    }
+}

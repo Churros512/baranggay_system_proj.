@@ -1,0 +1,3 @@
+/workspaces/baranggay_system_proj./baranggay_system_proj./build/CMakeFiles/barangay.dir
+/workspaces/baranggay_system_proj./baranggay_system_proj./build/CMakeFiles/edit_cache.dir
+/workspaces/baranggay_system_proj./baranggay_system_proj./build/CMakeFiles/rebuild_cache.dir
